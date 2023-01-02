@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Uncharted</title>
+    <script src="https://kit.fontawesome.com/239f844fdd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/content/css/style.css">
+  <style>
+    body{
+      background:
+             linear-gradient(
+               rgba(0, 0, 0, 0.7), 
+               rgba(0, 0, 0, 0.7)
+             ),
+             url(static/content/img/unchartedbg.jpg);
+         }
+    .card{
+        width: 250px;
+        height: 315px;
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .card:hover{
+        background-color: red;
+    }
+    .baslik:hover{
+        color: greenyellow;
+    }
+    <!-- .baslik{
+        margin-top: 30px;
+        color: white;
+    } -->
+
+    #o1:hover{
+        color: sandybrown;
+    }
+
+    #o2:hover{
+      color: royalblue;
+  }
+  
+
+  #o3:hover{
+    color: red;
+}
+#o4:hover{
+  color: blueviolet;
+}
+
+
+    #facebook:hover{
+        background-color: blue;
+    }
+
+    #instagram:hover{
+        background-color: #DD2A7B;
+    }
+
+    #youtube:hover{
+        background-color: red;
+    }
+
+    .navbar-brand{
+        color: white;
+    }
+  </style>
+  <script src="static/content/js/soundtrack.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+  <body>
+    <div class="container-fluid ">
+        <div class="row bg-dark p-2 text-white">
+            <div class="col-md"><i class="fa-brands fa-playstation"></i><a class="navbar-brand" href="{% url 'index' %}" id="o1">Uncharted</a></div>
+            <div class="col-md"><a class="navbar-brand" href="{% url 'oyunlar' %}" id="o2">Oyunlar</a></div>
+            <div class="col-md"><a class="navbar-brand" href="{% url 'muzik' %}" id="o3">Oyun Müzikleri</a></div>
+            <div class="col-md"><a class="navbar-brand" href="{% url 'girisyap' %}" id="o4">Giriş Yap</a></div>
+            <div class="col-md"><a class="navbar-brand" href="{% url 'kayitol' %}" id="o1">Kayıt Ol</a></div>
+            <div class="col-md"><div class="row">
+                <div class="col-2" id="facebook"><a href="https://tr-tr.facebook.com/unchartedmovie/" class="navbar-brand" style="color: white;" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="col-2" id="instagram"><a href="https://www.instagram.com/unchartedmovie/" class="navbar-brand" style="color: white;"target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="col-2" id="youtube"><a href="https://www.youtube.com/watch?v=6y3Fft-S6Y4&t=6687s&ab_channel=AhmetBayram" class="navbar-brand" style="color: white;" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+            </div></div>
+        </div>
+    </div>
+
+      <div class="alert alert-warning alert-dismissable mt-2">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <strong>Uyarı! İmleci Resimin Üzerinde Tutarak Seslerine , Üzerine Tıklayarak Oynanış Videosuna Ulaşabilirsiniz.</strong>
+      </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 text-center"><h3 class="baslik">2022 UNCHARTED OYUN SERİSİ</h3></div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+    </div>
+
+    
+      
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md"><div class="card" id="r1">
+              <audio id="pl">
+                <source src="static/content/soundtrack/uncharted2.mp3" type="audio/mpeg">
+              </audio>
+                <a href="https://www.youtube.com/watch?v=Rtrjoor0nA4&ab_channel=EasterGamersTv" target="_blank"><img src="static/content/img/uncharted2.jpg"  alt="" width="247" height="313"  onmouseover="oynat1()" onmouseleave="durdur1()"></a>
+              </div></div>
+            <div class="col-md"><div class="card" id="r2">
+              <audio id="p2">
+                <source src="static/content/soundtrack/ucha.mp3" type="audio/mpeg">
+              </audio>
+                <a href="https://www.youtube.com/watch?v=6y3Fft-S6Y4&t=8s&ab_channel=AhmetBayram" target="_blank"><img src="static/content/img/unchartedbg.jpg" class="card-img-top" alt="..." width="300" height="313" onmouseover="oynat2()" onmouseleave="durdur2()"></a>
+              </div></div>
+            <div class="col-md"> <div class="card" id="r3" >
+              <audio id="p3">
+                <source src="static/content/soundtrack/uncharted4.mp3" type="audio/mpeg">
+              </audio>
+                <a href="https://www.youtube.com/watch?v=-5hGJhUScl8&ab_channel=EasterGamersTv" target="_blank"><img src="static/content/img/thiefend.jpg" class="card-img-top" alt="..." width="300" height="313"  onmouseover="oynat3()" onmouseleave="durdur3()"></a>
+              </div></div>
+            <div class="col-md"><div class="card" id="r4">
+              <audio id="p4">
+                <source src="static/content/soundtrack/uncharted5.mp3" type="audio/mpeg">
+              </audio>
+                <a href="https://www.youtube.com/watch?v=X2z9mwLQEfk&ab_channel=FAGAMEZ" target="_blank"><img src="static/content/img/legacy.webp" class="card-img-top" alt="..." width="300" height="313"  onmouseover="oynat4()" onmouseleave="durdur4()"></a>
+              </div></div>              
+        </div>
+    </div>
+
+   
+
+    <br>
+    <marquee behavior="scroll" direction="left" class="text-white"
+           onmousedown="this.stop();"
+           onmouseup="this.start();">“Geceleri zihinlerinin tozlu molalarında düş görenler, gündüzleri bunun gereksizliğini öğrenmek için uyanırlar. Fakat gündüz düş görenler tehlikeli adamlardır. Çünkü onlar mümkün kılmak için gözleri açıkken de yaşayabilirler düşlerini. Tıpkı benim gibi...</marquee>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

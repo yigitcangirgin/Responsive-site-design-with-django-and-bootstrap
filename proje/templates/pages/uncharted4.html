@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Uncharted</title>
+    <script src="https://kit.fontawesome.com/239f844fdd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/content/css/style.css">
+    <style>
+
+      @media (min-width: 1200px) and (max-width: 1399.98px) { 
+      
+      #row1{
+        height: 2000px;
+      }
+      #nat{
+        width: 500px;
+        height: 500px;
+      }
+      #sam{
+        width: 500px;
+        height: 500px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) { 
+      
+        #row1{
+          height: 2520px;
+        }
+        #nat{
+          width: 500px;
+          height: 500px;
+        }
+        #sam{
+          width: 500px;
+          height: 500px;
+        }
+
+
+     
+
+      @media (min-width: 1399.99px) and  (max-width: 7969px){ 
+        body{
+          background:
+                 linear-gradient(
+                   rgba(0, 0, 0, 0.7), 
+                   rgba(0, 0, 0, 0.7)
+                 ),
+                 url(static/content/img/unchartedbg.jpg);
+             }
+    
+      }
+      
+      
+           
+        #facebook:hover{
+          background-color: blue;
+      }
+  
+      #instagram:hover{
+          background-color: #DD2A7B;
+      }
+  
+      #youtube:hover{
+          background-color: red;
+      }
+  
+      .card{
+        background-color: #242424 ;
+        margin-left: 480px;
+        margin-top: 200px;
+      }
+      #container2{
+        margin-top: 200px;
+        width: 1200px;
+        padding: 1px;
+      }
+      #hover1:hover{
+        background-color: red;
+      }
+      #hover1{
+        background-color: #323232;
+      }
+    }
+  }
+  
+    body{
+      background:
+             linear-gradient(
+               rgba(0, 0, 0, 0.7), 
+               rgba(0, 0, 0, 0.7)
+             ),
+             url(static/content/img/unchartedbg.jpg);
+         }
+
+
+         @media (max-width: 769px) {
+          #nat{
+            width: 400px;
+            height: 400px;
+          }
+          #sam{
+            width:400px;
+            height: 400px;
+          }
+          #ana1{
+            width: 400px;
+            height: 500px;
+          }
+  
+         }
+
+         #o1:hover{
+          color: sandybrown;
+      }
+    
+      #o2:hover{
+        color: royalblue;
+    }
+    
+    
+    #o3:hover{
+      color: red;
+    }
+    #o4:hover{
+    color: blueviolet;
+    }
+    .navbar-brand{
+      color: white;
+  }
+
+
+  @media (min-width: 768px) and  (max-width: 991.98px){ 
+
+    #ana1{
+      width: 550px;
+      height: 500px;
+    }
+  }
+
+  #facebook:hover{
+    background-color: blue;
+}
+
+#instagram:hover{
+    background-color: #DD2A7B;
+}
+
+#youtube:hover{
+    background-color: red;
+}
+    </style>
+
+
+</head>
+  <body>
+    <div class="container-fluid ">
+        <div class="row bg-dark p-2 text-white">
+          <div class="col-md"><i class="fa-brands fa-playstation"></i> &nbsp; <a class="navbar-brand" href="{% url 'index' %}" id="o1">Uncharted</a></div>
+          <div class="col-md"><a class="navbar-brand" href="{% url 'oyunlar' %}" id="o2">Oyunlar</a></div>
+          <div class="col-md"><a class="navbar-brand" href="{% url 'muzik' %}" id="o3">Oyun Müzikleri</a></div>
+          <div class="col-md"><a class="navbar-brand" href="{% url 'girisyap' %}" id="o4">Giriş Yap</a></div>
+          <div class="col-md"><a class="navbar-brand" href="{% url 'kayitol' %}" id="o1">Kayıt Ol</a></div>
+            <div class="col-md"><div class="row">
+              <div class="col-2 col-md" id="facebook"><a href="https://tr-tr.facebook.com/unchartedmovie/" style="color: white;" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+              <div class="col-2 col-md" id="instagram"><a href="https://www.instagram.com/unchartedmovie/" style="color: white;"target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+              <div class="col-2 col-md" id="youtube"><a href="https://www.youtube.com/watch?v=6y3Fft-S6Y4&t=6687s&ab_channel=AhmetBayram"  style="color: white;" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+          </div></div>
+        </div>
+    </div>
+
+    <div class="container mt-3 bg-dark" id="row1">
+        <div class="col-md text-center">
+        <img src="static/content/img/thiefend.jpg" alt="" width="900" height="500" class="mt-5" id="ana1">
+
+        <p class="text-white mt-5">MACERA DEVAM EDİYOR…
+
+            UNCHARTED 3: Drake’s Deception'da yaşanan olayların üzerinden geçen üç yıldan sonra Nathan Drake, servet avcılığı dünyasını büyük ölçüde arkasında bırakır. Fakat Drake’in kardeşi Sam, hayatını kurtarması için ondan yardım ister ve Drake'e karşı koyamayacağı bir macera teklifi sunmasıyla kaderin yön değiştirmesi fazla uzun sürmez.  
+            <br><br><br>
+Kaptan Henry Avery’nin uzun zaman önce kaybolmuş hazinesinin peşine düşen Sam ve Drake, Madagaskar ormanlarının derinliklerindeki korsan ütopyası Libertalia'yı bulmak için yola koyulur. UNCHARTED 4: Bir Hırsızın Sonu, oyuncuların Avery'nin hazinesini aramaları için orman adalarına, uzaklara yayılmış şehirlere ve karla kaplı dağlara kadar tüm dünyada geçen bir yolculuğa götürüyor.
+            
+
+<h2 class="text-white mt-5 mb-5">Kardeşlerle Tanışın</h2>
+<div class="row">
+    <div class="col col-md"><img src="static/content/img/nathan.webp" alt="" width="600" height="400" id="nat"> <p class="text-white"> <strong class="text-left">Nathan Drake</strong><br> <br> Hazine avcılığından emekli olan Drake, bir anda hırsızların dünyasına geri dönmek zorunda kalır. Çok daha kişisel riskleri göze alarak, efsanevi korsan hazinesinin ardındaki tarihi komployu ortaya çıkarmak için küresel boyutta bir yolculuğa çıkar. En büyük macerasında fiziksel sınırlarını, problem çözme yeteneklerini zorlayacak ve sevdiklerini kurtarmak için büyük fedakârlıklarını göze alacak.</p></div>
+<div class="col col-md"><img src="static/content/img/sam.webp" alt=""width="600" height="400" id="sam"><p class="text-white"> <strong>Sam Drake</strong> <br> <br> Sam, kardeşi Nate'den beş yaş büyüktür ve önceden öldüğü sanılıyordu. İlk başta Nate'in hazine avcılığı hayatı sebebiyle kaybolduğu söylendi. Sam, Nate'e göre daha pervasız ve kardeşinin başarılarını birazcık kıskanan biri olarak tanımlanır.</p></div>
+</div>
+
+<br><br><br>
+<img src="static/content/img/down.ico" alt="" width="100" height="100">
+<br>
+<div class="col col-md"><a href="https://file92.gofile.io/download/5c29121f-2dcc-4314-8725-55fcc20a6bb4/Uncharted4.rar"><img src="static/content/img/indir.png" alt="" width="400" height="200"></a></div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

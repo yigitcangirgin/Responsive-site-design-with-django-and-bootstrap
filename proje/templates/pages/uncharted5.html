@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Uncharted</title>
+    <script src="https://kit.fontawesome.com/239f844fdd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/content/css/style.css">
+  <style>
+
+    @media (min-width: 1000px) and (max-width: 1399.98px) { 
+    
+    #row1{
+      height: 1800px;
+    }
+    #ana1{
+      width: 550px;
+      height: 500px;
+    }
+
+    #o1:hover{
+      color: sandybrown;
+  }
+
+  #o2:hover{
+    color: royalblue;
+}
+
+
+#o3:hover{
+  color: red;
+}
+#o4:hover{
+color: blueviolet;
+}
+    
+    
+   
+
+    @media (min-width: 1399.99px) { 
+      body{
+        background:
+               linear-gradient(
+                 rgba(0, 0, 0, 0.7), 
+                 rgba(0, 0, 0, 0.7)
+               ),
+               url(static/content/img/unchartedbg.jpg);
+           }
+
+           #o1:hover{
+            color: sandybrown;
+        }
+      
+        #o2:hover{
+          color: royalblue;
+      }
+      
+      
+      #o3:hover{
+        color: red;
+      }
+      #o4:hover{
+      color: blueviolet;
+      }
+  
+    }
+    
+    
+         .navbar-brand{
+          color: white;
+      }
+      #facebook:hover{
+        background-color: blue;
+    }
+
+    #instagram:hover{
+        background-color: #DD2A7B;
+    }
+
+    #youtube:hover{
+        background-color: red;
+    }
+
+    .card{
+      background-color: #242424 ;
+      margin-left: 480px;
+      margin-top: 200px;
+    }
+    #container2{
+      margin-top: 200px;
+      width: 1200px;
+      padding: 1px;
+    }
+    #hover1:hover{
+      background-color: red;
+    }
+    #hover1{
+      background-color: #323232;
+    }
+    #o1:hover{
+      color: sandybrown;
+  }
+
+  #o2:hover{
+    color: royalblue;
+}
+
+
+#o3:hover{
+  color: red;
+}
+#o4:hover{
+color: blueviolet;
+}
+  }
+
+  body{
+    background:
+           linear-gradient(
+             rgba(0, 0, 0, 0.7), 
+             rgba(0, 0, 0, 0.7)
+           ),
+           url(static/content/img/unchartedbg.jpg);
+       }
+
+       #o1:hover{
+        color: sandybrown;
+    }
+  
+    #o2:hover{
+      color: royalblue;
+  }
+  
+  
+  #o3:hover{
+    color: red;
+  }
+  #o4:hover{
+  color: blueviolet;
+  }
+
+  @media (min-width: 768px) and  (max-width: 991.98px){ 
+
+    #ana1{
+      width: 550px;
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    #ana1{
+      width: 400px;
+      height: 500px;
+    }
+
+   }
+
+   @media (min-width: 992px) {
+    #ana1{
+      width: 700px;
+      height: 400px;
+    }
+
+    #o1:hover{
+      color: sandybrown;
+  }
+
+  #o2:hover{
+    color: royalblue;
+}
+
+
+#o3:hover{
+  color: red;
+}
+#o4:hover{
+color: blueviolet;
+}
+.navbar-brand{
+  color: white;
+}
+  }
+
+  @media (max-width: 992px) {
+
+    #o1:hover{
+      color: sandybrown;
+  }
+
+  #o2:hover{
+    color: royalblue;
+}
+
+
+#o3:hover{
+  color: red;
+}
+#o4:hover{
+color: blueviolet;
+}
+.navbar-brand{
+  color: white;
+}
+   }
+  
+
+  </style>
+
+
+</head>
+  <body>
+    <div class="container-fluid ">
+        <div class="row bg-dark p-2 text-white">
+          <div class="col-md"><i class="fa-brands fa-playstation"></i> &nbsp; <a class="navbar-brand" href="{% url 'index' %}" id="o1">Uncharted</a></div>
+          <div class="col-md"><a class="navbar-brand" href="{% url 'oyunlar' %}" id="o2">Oyunlar</a></div>
+          <div class="col-md"><a class="navbar-brand" href="{% url 'muzik' %}" id="o3">Oyun Müzikleri</a></div>
+          <div class="col-md"><a class="navbar-brand" href="{% url 'girisyap' %}" id="o4">Giriş Yap</a></div>
+          <div class="col-md"><a class="navbar-brand" href="{% url 'kayitol' %}" id="o1">Kayıt Ol</a></div>
+            <div class="col-md"><div class="row">
+              <div class="col-2 col-md" id="facebook"><a href="https://tr-tr.facebook.com/unchartedmovie/" class="navbar-brand" style="color: white;" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+              <div class="col-2 col-md" id="instagram"><a href="https://www.instagram.com/unchartedmovie/" class="navbar-brand" style="color: white;"target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+              <div class="col-2 col-md" id="youtube"><a href="https://www.youtube.com/watch?v=6y3Fft-S6Y4&t=6687s&ab_channel=AhmetBayram" class="navbar-brand" style="color: white;" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+          </div></div>
+        </div>
+    </div>
+
+    <div class="container-md mt-3 bg-dark" id="row1">
+        <div class="col col-lg text-center">
+        <img src="static/content/img/legacy.webp" alt="" width="980" height="620" class="mt-5" id="ana1">
+
+        <p class="text-white mt-5">Şansını Aramaya Hazır mısın?
+            <br><br><br>
+            UNCHARTED: Hırsızlar Mirası Koleksiyonu ile şansınızı arayın ve haritada izinizi bırakın. Ünlü hırsızlar Nathan Drake ve Chloe Frazer’ın akıllara kazınan, sürükleyici ve zekâ sınırlarını zorlayan maceralarının yer aldığı ikonik UNCHARTED serisinin heyecan verici sinematik hikâye anlatımını ve satış rekorları kıran en büyük aksiyon yapımlarını tecrübe edin.
+            <br><br><br>
+            Ödüllü oyun geliştiricisi Naughty Dog tarafından geliştirilen UNCHARTED: Hırsızlar Mirası Koleksiyonu, UNCHARTED™ 4: Bir Hırsızın Sonu ve UNCHARTED™: Kayıp Miras olmak üzere, dünya çapında beğenilen iki tek oyunculu macerayı içeriyor. Bol bol kahkaha, dram, yüksek adrenalinli çatışma sekansları ve keşfin heyecanıyla her bir hikâye, elden geçirilerek daha sürükleyici hâle getirildi.
+            <br><br><br>
+            Nefes kesen manzaralara tanık olun
+            <br><br><br>
+            Yoğun ormanlardan karla kaplı dağlara, egzotik adalardan yağmurlu ara sokaklara kadar uzanan, baş döndürücü güzellikteki ortamların her santimini muhteşem detaylarla keşfedin. Süper keskin 4K çözünürlük* ve Ultra Geniş Monitör desteği** ile kendinizi bu sinematik hikâye anlatımına kaptırın. Ayarlanabilir Doku ve Model Kalitesi, Eşyönsüz Süzme, Gölgeler, Yansımalar ve Ortam Kapatma gibi gelişmiş birçok grafik ayarlama özelliğinin keyfini çıkarın.
+            <br><br><br>
+            Macerayı kendinize göre ayarlayın
+            <br><br><br>
+            Oyun seçenekleri için geliştirilmiş arayüz, yeniden tasarlanmış kullanıcı arayüzleri, bazı menülere eklenen ölçek kaydırıcıları, GPU ve VRAM tespit/yönetim seçenekleri, Otomatik Duraklatma, Arka Plana İndirgeme, Değişken Yükleme Hızı desteği ve çok daha fazlası dâhil olmak üzere envaiçeşit modu ve PC odaklı geliştirmeyi açığa çıkarın.
+            <br><br><br>
+            AMD Fidelity FX Super Resolution 2
+            <br><br><br>
+            Nathan ve Chloe olarak servet peşinde koşarken, AMD’nin üst düzey zamansal yükseltme teknolojisiyle kare hızınızı artırın. FSR 2, geniş çeşitlilikteki uyumlu ekran kartlarında kare hızlarınıza takviye yapmak ve UNCHARTED’da yüksek kaliteli, yüksek çözünürlüklü oyun deneyimleri sunmak için en gelişmiş algoritmaları kullanır.</p>
+            <br> <br> <br>
+            <img src="static/content/img/down.ico" alt="" width="100" height="100">
+            <br>
+            <h3 class="uyari mt-5 mb-4" id="uyari">DİKKAT BU OYUN TORRENT İLE İNDİRİLİR</h3>
+            <div class="col-md"><a href="https://www.torrentoyunindir.com/torrents1/UNCHARTED.Legacy.of.Thieves.Collection.v1.3.20812-P2P.torrent"><img src="static/content/img/indir.png" alt="" width="400" height="200"></a></div>
+    </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
